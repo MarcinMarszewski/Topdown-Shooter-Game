@@ -51,7 +51,8 @@ public class PlayerController : MonoBehaviour
 	}
 
 	void HandleShooting()
-    {
-		if(Input.GetAxisRaw("Fire")==1)pistol.Shoot(); //to samo co w HandleShielding
-    }
+	{
+		if (Input.GetAxisRaw("Fire") == 1) pistol.ShootTrigger(); //to samo co w HandleShielding
+		if (Input.GetAxisRaw("Fire") == -1) pistol.ReloadTrigger();
+	}
 }

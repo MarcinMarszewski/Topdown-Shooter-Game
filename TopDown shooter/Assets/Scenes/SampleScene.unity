@@ -359,9 +359,10 @@ GameObject:
   m_Component:
   - component: {fileID: 878152559}
   - component: {fileID: 878152560}
+  - component: {fileID: 878152561}
   m_Layer: 0
   m_Name: GameScriptableObject
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -393,6 +394,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dfa14dab6a34aa4da4fb59e50c6b111, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &878152561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878152558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a739820a62d763c4b9c0c332bee4f3b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletList:
+  - {fileID: 2940433053269694820, guid: 16fdf7c57136ef949a37d8cfaa503f97, type: 3}
 --- !u!1 &1643526206
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,6 +545,30 @@ PrefabInstance:
     - target: {fileID: 2806747120575139131, guid: d5d9001487949b14eb02b4e9f692a1cc, type: 3}
       propertyPath: m_Name
       value: Pistol
+      objectReference: {fileID: 0}
+    - target: {fileID: 2906253633139707964, guid: d5d9001487949b14eb02b4e9f692a1cc, type: 3}
+      propertyPath: ammoMax
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2906253633139707964, guid: d5d9001487949b14eb02b4e9f692a1cc, type: 3}
+      propertyPath: ammoReady
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2906253633139707964, guid: d5d9001487949b14eb02b4e9f692a1cc, type: 3}
+      propertyPath: reloadTime
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2906253633139707964, guid: d5d9001487949b14eb02b4e9f692a1cc, type: 3}
+      propertyPath: shootDelay
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2906253633139707964, guid: d5d9001487949b14eb02b4e9f692a1cc, type: 3}
+      propertyPath: bulletSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2906253633139707964, guid: d5d9001487949b14eb02b4e9f692a1cc, type: 3}
+      propertyPath: magCapacity
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6624027907643669485, guid: d5d9001487949b14eb02b4e9f692a1cc, type: 3}
       propertyPath: m_RootOrder

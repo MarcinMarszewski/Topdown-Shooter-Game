@@ -1,21 +1,19 @@
 using UnityEngine;
 
-public interface IGun
+public abstract class Gun : MonoBehaviour
 {
-    void Shoot();
-    void Reload();
-}
+	[SerializeField]
+	internal int ammoMax, ammoTotal, magCapacity, ammoReady;
+	[SerializeField]
+	internal float shootDelay, reloadTime, bulletSpeed;
+	[SerializeField]
+	internal Transform barrelExit;
 
-public abstract class Gun : MonoBehaviour, IGun
-{
-    [SerializeField]
-    internal int ammoMax, ammoTotal, ammo;
-    [SerializeField]
-    internal float shootSpeed, reloadTime, bulletSpeed;
-    [SerializeField]
-    internal Transform barrelExit;
+	internal abstract void Reload();
 
-    public abstract void Reload();
+	internal abstract void Shoot();
 
-    public abstract void Shoot();
+	public abstract void ShootTrigger();
+
+	public abstract void ReloadTrigger();
 }
